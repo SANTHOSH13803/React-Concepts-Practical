@@ -5,9 +5,7 @@ function ContextConcepts() {
     {
       name: "createContext",
 
-      snippet: `
-const UserContext =
-createContext();
+      snippet: `const UserContext = createContext();
 `,
 
       description: "Creates a context object for sharing values globally.",
@@ -25,12 +23,8 @@ createContext();
       name: "Provider",
 
       snippet: `
-<UserContext.Provider
- value={user}
->
-
-<App/>
-
+<UserContext.Provider value={user}>
+  <App/>
 </UserContext.Provider>
 `,
 
@@ -48,11 +42,7 @@ createContext();
     {
       name: "useContext",
 
-      snippet: `
-const user =
-useContext(
-UserContext
-);
+      snippet: `const user = useContext(UserContext);
 `,
 
       description: "Consumes context values without prop drilling.",
