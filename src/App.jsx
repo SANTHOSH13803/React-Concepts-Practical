@@ -1,6 +1,6 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import ReactApp from "./ReactApp/App";
-
+import "./App.css";
 function App() {
   const routes = [
     {

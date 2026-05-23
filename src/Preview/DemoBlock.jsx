@@ -31,7 +31,8 @@ function DemoBlock({ title, preview, files }) {
       rounded-xl
       shadow-sm
       overflow-hidden
-      mb-10
+      mb-10 
+      w-full
       "
     >
       {/* Header */}
@@ -107,7 +108,7 @@ function DemoBlock({ title, preview, files }) {
   whitespace-nowrap
   scrollbar-thin
   pb-2
-  max-w-[500px]
+  max-w-125
   "
         >
           {fileNames.map((file) => (

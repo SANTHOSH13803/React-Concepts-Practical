@@ -1,5 +1,6 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import ContextDemo from "./Concepts/contextApi/ContextDemo";
+import ReduxToolKitTheory from "./Concepts/ReduxToolkit/ReduxToolKitTheory";
 function App() {
   const routes = [
     {
@@ -9,15 +10,9 @@ function App() {
     },
 
     {
-      path: "button",
-      name: "Button",
-      element: <div>Button Docs</div>
-    },
-
-    {
-      path: "hooks",
-      name: "Hooks",
-      element: <div>Hooks Docs</div>
+      path: "rtk-toolkit",
+      name: "Redux Toolkit",
+      element: <ReduxToolKitTheory />
     }
   ];
 
@@ -64,10 +59,16 @@ bg-slate-50
         {routes.map((each) => (
           <NavLink
             key={each.name}
-            to={each.path}
-            className="
-hover:text-blue-500
-"
+            to={`/react/${each.path}`}
+            className={({ isActive }) => `
+ px-4
+ py-2
+ rounded
+ transition
+
+ ${isActive ? "bg-slate-200 font-semibold" : "hover:bg-slate-100"}
+
+ `}
           >
             {each.name}
           </NavLink>
