@@ -81,7 +81,7 @@ function DemoBlock({ title, preview, files }) {
           p-6
           "
         >
-          {preview}
+          {preview ?? "NO Preview"}
         </div>
       </div>
 
