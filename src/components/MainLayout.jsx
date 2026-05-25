@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import routes from "../routes";
+import { sideBarRoutes } from "../routes";
 
 const MainLayout = () => {
   return (
@@ -20,7 +20,7 @@ const MainLayout = () => {
           Docs
         </h1>
         <div className="flex flex-col gap-4">
-          {routes?.[0]?.children.map((each) => (
+          {sideBarRoutes.map((each) => (
             <NavLink
               key={each.header}
               to={each.path}
