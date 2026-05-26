@@ -1,3 +1,4 @@
+import ClosuerPreview from "./Concepts/Closures/ClosuerPreview";
 import ContextDemo from "./Concepts/contextApi/ContextDemo";
 import BasicFormTheory from "./Concepts/forms/BasicFormTheory";
 import ReduxToolKitTheory from "./Concepts/ReduxToolkit/ReduxToolKitTheory";
@@ -23,6 +24,11 @@ const ReactRoutes = [
     path: "basic-form",
     name: "Basic Form",
     element: <BasicFormTheory />
+  },
+  {
+    path: "closure",
+    name: "Closure",
+    element: <ClosuerPreview />
   }
 ];
 export default ReactRoutes;
